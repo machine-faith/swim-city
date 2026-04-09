@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md py-4 shadow-sm border-b border-gray-100' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className={`text-2xl font-bold tracking-tighter ${isScrolled ? 'text-gray-900' : 'text-gray-900 md:text-white'}`}>SWIM<span className="text-aqua-500">CITY</span></span>
+          <img src="/logo.png" alt="Swim City" className={`h-10 w-auto transition-all ${isScrolled ? '' : 'brightness-0 invert'}`} />
         </div>
         <div className={`hidden md:flex items-center gap-8 font-medium text-xs uppercase tracking-[0.2em] ${isScrolled ? 'text-gray-600' : 'text-white'}`}>
           <a href="#services" className="hover:text-aqua-500 transition-colors">Services</a>
